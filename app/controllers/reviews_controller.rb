@@ -12,15 +12,15 @@ class ReviewsController < ApplicationController
     @review = Review.new
   end
 
-  # def create
-  #   @review = Review.new(review_params)
-  #   if @review.valid?
-  #     @review.save
-  #     redirect_to reviews_path(@reviews)
-  #   else
-  #     render :new
-  #   end
-  # end
+  def create
+    @review = Review.new(review_params)
+    if @review.valid?
+      @review.save
+      redirect_to reviews_path(@reviews)
+    else
+      render :new
+    end
+  end
 
 private
   def review_params

@@ -1,0 +1,25 @@
+<h2>Add A Review</h2>
+<div>
+<%= form_for(@review) do |f| %>
+  <label>Movie Title:</label><br>
+  <%= f.collection_select :movie_id, Movie.all, :id, :title %><br>
+  <br>
+
+  <label>Username:</label><br>
+  <%= f.collection_select :user_id, User.all, :id, :username %><br>
+  <br>
+
+  <label>Check If It's One Of Your Favorites:</label><br>
+  <%= f.check_box :favorite %><br>
+  <br>
+
+  <label>How scary is it? Enter 1 - 5</label><br>
+  <%= f.number_field :scare_rating %><br>
+  <br>  
+
+  <%= f.text_area :content, placeholder: "Write Your Review Here" %><br>
+  <br>  
+  
+  <%= f.submit %>
+<% end %>
+</div>
