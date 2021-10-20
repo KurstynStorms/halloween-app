@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">HalloweenApp</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <% if user_signed_in? %>
+        <li class="nav-item">
+        <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link" %>
+      </li>
+      <% else %>
+       <li class="nav-item">
+       <%= link_to "Register", new_user_registration_path, class: "nav-link" %>
+      </li>
+       <li class="nav-item">
+       <%= link_to "Sign in", new_user_session_path, class: "nav-link" %>
+      </li>
+      <% end %>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/movies">My Movies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/reviews">My Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/movies/new">Add A New Movie</a>
+      </li>
+    </ul>
+  </div>
+</nav>

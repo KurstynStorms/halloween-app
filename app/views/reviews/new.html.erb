@@ -5,10 +5,6 @@
   <%= f.collection_select :movie_id, Movie.all, :id, :title %><br>
   <br>
 
-  <label>Username:</label><br>
-  <%= f.collection_select :user_id, User.all, :id, :username %><br>
-  <br>
-
   <label>Check If It's One Of Your Favorites:</label><br>
   <%= f.check_box :favorite %><br>
   <br>
