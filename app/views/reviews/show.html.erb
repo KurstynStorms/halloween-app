@@ -1,7 +1,11 @@
 <h1><%= @review.movie.title %></h1>
 <ul>
-<li><%= image_tag(@review.movie.poster_url) %></li>
-<li><%= @review.favorite%></li>
-<li><%= @review.content%></li>
-<li><%= @review.scare_rating%></li>
+  <li><%= image_tag(@review.movie.poster_url) %></li>
+  <li><%= @review.favorite%></li>
+  <li><%= @review.content%></li>
+  <li><% @review.scare_rating%></li>
+  <%# <% byebug%> 
+  <li>
+    <%= link_to @review.movie.title, edit_review_path %>
+  </li>
 </ul>

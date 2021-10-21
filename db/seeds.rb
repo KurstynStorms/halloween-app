@@ -8,6 +8,7 @@
 Movie.destroy_all
 Review.destroy_all
 User.destroy_all
+
 puts "seeding..."
 
 nightmare_before = Movie.create({title: "Nightmare Before Christmas", genre: "Fantasy", summary: "The film follows the misadventures of Jack Skellington, Halloweentown's beloved pumpkin king. When Jack accidentally stumbles on Christmastown, he plots to bring Christmas under his control by kidnapping Santa Claus and taking over. But Jack soon discovers even the best-laid plans can go seriously awry.", poster_url: "https://m.media-amazon.com/images/M/MV5BNWE4OTNiM2ItMjY4Ni00ZTViLWFiZmEtZGEyNGY2ZmNlMzIyXkEyXkFqcGdeQXVyMDU5NDcxNw@@._V1_UY1200_CR85,0,630,1200_AL_.jpg"})
@@ -31,22 +32,22 @@ addams_family = Movie.create({title: "The Addams Family", genre: "Comedy", summa
 scary_movie = Movie.create({title: "Scary Movie", genre: "Horror Comedy", summary: "This film boldly fires barbs at the classic scenes from Scream, The Sixth Sense, The Matrix, I Know What You Did Last Summer and The Blair Witch Project, then goes on to mock a whole myriad of teen movie clichés, no matter the genre.", poster_url: "https://prod.miramax.digital/media/assets/791_ScaryMovie_Catalog_Poster_Approved_v2.png"})
 zombieland = Movie.create({title: "Zombieland", genre: "Horror Comedy", summary: "After a virus turns most people into zombies, the world's surviving humans remain locked in an ongoing battle against the hungry undead. Four of these survivors make their way to Los Angeles.", poster_url: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStzQ-tKRUX5XtmbY1vy-7B5-r7OkvK6Usql_FdXx4Fot3CT5Bh"})
 
-review1 = Review.create({movie_id: 1, user_id: 1, favorite: true, content: "Great movie! Kids might get a little nervous but still a lot of fun to watch.", scare_rating: 2})
-review2 = Review.create({movie_id: 2, user_id: 1, favorite: false, content: "Pretty gory but a has some pretty good writing. Also pretty funny.", scare_rating: 4})
-review3 = Review.create({movie_id: 3, user_id: 1, favorite: false, content: "Great halloween film for kids!", scare_rating: 1})
-review4 = Review.create({movie_id: 4, user_id: 1, favorite: true, content: "A romantic, witchy vibe.", scare_rating: 1})
-review5 = Review.create({movie_id: 5, user_id: 1, favorite: true, content: "Hilarious zombie film.", scare_rating: 3})
-review6 = Review.create({movie_id: 6, user_id: 1, favorite: true, content: "A phenomenal story. Should be family friendly.", scare_rating: 2})
-review7 = Review.create({movie_id: 7, user_id: 1, favorite: true, content: "A Halloween classic.", scare_rating: 1})
-review8 = Review.create({movie_id: 8, user_id: 1, favorite: false, content: "Wildly unsettling.", scare_rating: 5})
-review9 = Review.create({movie_id: 9, user_id: 1, favorite: true, content: "Truly terrifying.", scare_rating: 5})
-review10 = Review.create({movie_id: 10, user_id: 1, favorite: false, content: "Classic horror.", scare_rating: 5})
-review11 = Review.create({movie_id: 11, user_id: 1, favorite: true, content: "Could be a little too scary for some kids.", scare_rating: 3})
-review12 = Review.create({movie_id: 12, user_id: 1, favorite: false, content: "I felt a sense of dread the entire time. It was wonderfully done.", scare_rating: 4})
-review13 = Review.create({movie_id: 13, user_id: 1, favorite: true, content: "Lots of fun to watch!", scare_rating: 2})
-review14 = Review.create({movie_id: 14, user_id: 1, favorite: false, content: "Love Eddie Murphy!", scare_rating: 2})
-review15 = Review.create({movie_id: 15, user_id: 1, favorite: true, content: "Definitely original.", scare_rating: 4})
-review16 = Review.create({movie_id: 16, user_id: 1, favorite: false, content: "Very fun.", scare_rating: 2})
-review17 = Review.create({movie_id: 37, user_id: 1, favorite: true, content: "One of my all time favorites!", scare_rating: 3})
+review1 = Review.create({movie_id: 1, favorite: true, content: "Great movie! Kids might get a little nervous but still a lot of fun to watch.", scare_rating: 2})
+review2 = Review.create({movie_id: 2, favorite: false, content: "Pretty gory but a has some pretty good writing. Also pretty funny.", scare_rating: 4})
+review3 = Review.create({movie_id: 3, favorite: false, content: "Great halloween film for kids!", scare_rating: 1})
+review4 = Review.create({movie_id: 4, favorite: true, content: "A romantic, witchy vibe.", scare_rating: 1})
+review5 = Review.create({movie_id: 5, favorite: true, content: "Hilarious zombie film.", scare_rating: 3})
+review6 = Review.create({movie_id: 6, favorite: true, content: "A phenomenal story. Should be family friendly.", scare_rating: 2})
+review7 = Review.create({movie_id: 7, favorite: true, content: "A Halloween classic.", scare_rating: 1})
+review8 = Review.create({movie_id: 8, favorite: false, content: "Wildly unsettling.", scare_rating: 5})
+review9 = Review.create({movie_id: 9, favorite: true, content: "Truly terrifying.", scare_rating: 5})
+review10 = Review.create({movie_id: 10, favorite: false, content: "Classic horror.", scare_rating: 5})
+review11 = Review.create({movie_id: 11, favorite: true, content: "Could be a little too scary for some kids.", scare_rating: 3})
+review12 = Review.create({movie_id: 12, favorite: false, content: "I felt a sense of dread the entire time. It was wonderfully done.", scare_rating: 4})
+review13 = Review.create({movie_id: 13, favorite: true, content: "Lots of fun to watch!", scare_rating: 2})
+review14 = Review.create({movie_id: 14, favorite: false, content: "Love Eddie Murphy!", scare_rating: 2})
+review15 = Review.create({movie_id: 15, favorite: true, content: "Definitely original.", scare_rating: 4})
+review16 = Review.create({movie_id: 16, favorite: false, content: "Very fun.", scare_rating: 2})
+review17 = Review.create({movie_id: 37, favorite: true, content: "One of my all time favorites!", scare_rating: 3})
 
 puts "done"
