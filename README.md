@@ -1,24 +1,10 @@
 # README
+Welcome to Rotten Pumpkins.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It's a little like Rotten Tomatoes, but more spooky.
 
-Things you may want to cover:
+In order to access, create an account, or sign in if you already have one.
 
-* Ruby version
+You can access all of your favorite Halloween movies and rate them based on how scary they are.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You can also leave a review if you would like. 
