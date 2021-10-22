@@ -1,9 +1,8 @@
-<h1>All Movies</h1>
-
-<ul>
+<h1 class = "header">Movies</h1>
+<div class = "card cards mx-auto d-block">
   <% @movies.each do |movie| %>
-    <li>
+    <p>
       <%= link_to movie.title, movie_path(movie) %>
-    </li>
+    </p>
   <% end %>
-</ul>
+</div>

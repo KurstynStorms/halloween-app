@@ -1,9 +1,9 @@
-<h1><%= @movie.title %></h1>
-<ul>
-<li><%= image_tag(@movie.poster_url, :size => "200x300")%></li>
-<li><%= @movie.genre%></li>
-<li><%= @movie.summary%></li>
-<% @movie.reviews.each do |review| %>
-<li><%= link_to review.scare_rating, review_path(review)%></li>
+<h1 class = "header"><%= @movie.title %></h1>
+<div class = "card cards mx-auto d-block">
+<p><%= image_tag(@movie.poster_url, :size => "200x300")%></p>
+<p>Genre : <%= @movie.genre%></p>
+<p>Summary : <%= @movie.summary%></p>
+<% @movie.reviews.each do |review| %> 
+<p><%= link_to "See Review Here", review_path(review)%></p>
 <% end %>
-</ul>
+</div>

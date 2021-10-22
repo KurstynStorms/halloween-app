@@ -1,5 +1,5 @@
-<h2>Edit Review</h2>
-<div>
+<h2 class = "header">Edit Review</h2>
+<div class = "card cards mx-auto d-block">
 <%= form_for(@review) do |f| %>
   <label>Movie Title:</label><br>
   <%= f.collection_select :movie_id, Movie.all, :id, :title %><br>

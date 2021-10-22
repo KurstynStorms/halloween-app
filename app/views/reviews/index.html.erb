@@ -1,9 +1,8 @@
-<h1>All Reviews</h1>
-
-<ul>
+<h1 class = "header">Reviews</h1>
+<div class = "card cards mx-auto d-block">
   <% @reviews.each do |review| %>
-    <li>
+    <p>
       <%= link_to review.movie.title, review_path(review) %>
-    </li>
+    </p>
   <% end %>
-</ul>
+  </div>
