@@ -21,6 +21,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
   list-style-type: none;
+  background-size: cover;
+  background-color: black;
   color: white;
 }
 
@@ -178,7 +180,7 @@ html, body {
   border: 0;
   height: 100%;
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 0;
   position: relative;
   width: 100%;

@@ -1,7 +1,9 @@
-<h1 class = "header"><%= @review.movie.title %></h1>
+<h1 class = "header"><%= @review.movie.title %> 🎃 </h1>
 <div class = "card cards mx-auto d-block">
   <p><%= image_tag(@review.movie.poster_url, :size => "200x300") %></p>
-  <p>Favorite ? <%= @review.favorite%></p>
+  <% if @review.favorite %>
+    <p>🎃 This is one of my favorites! 🎃 </p>
+    <% end %>
   <p>Content : <%= @review.content%></p>
   <p>Scare Rating : <%= @review.scare_rating%></p>
   <p><%= link_to "Edit Review Here", edit_review_path %></p>
