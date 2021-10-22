@@ -18,4 +18,10 @@
   
   <%= f.submit %>
 <% end %>
+
+<% if @review.errors.any? %>
+<p>
+  <%= @review.errors.full_messages %>
+</p>
+<% end %>  
 </div>
