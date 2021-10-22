@@ -1,4 +1,4 @@
-<h1 class = "header"><%= @review.movie.title %> 🎃 </h1>
+<h1 class = "header"> 🎃 <%= @review.movie.title %> 🎃 </h1>
 <div class = "card cards mx-auto d-block">
   <p><%= image_tag(@review.movie.poster_url, :size => "200x300") %></p>
   <% if @review.favorite %>
