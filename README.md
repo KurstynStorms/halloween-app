@@ -29,13 +29,15 @@ To install:
 
 4. Run `rails db:migrate`.
 
-5. Run `rails s` to start your server.
+5. Run `rails db:seed`.
 
-6. Go to your localhost:3000.
+6. Run `rails s` to start your server.
 
-7. In order to access, create an account, or sign in if you already have one.
+7. Go to your localhost:3000.
 
-8. Navigate the page using the navbar in the top right and by clicking each of the provided links.
+8. In order to access, create an account, or sign in if you already have one.
 
-9. Enjoy. 🎃
+9. Navigate the page using the navbar in the top right and by clicking each of the provided links.
+
+10. Enjoy. 🎃
 
