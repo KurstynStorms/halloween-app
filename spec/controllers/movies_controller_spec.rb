@@ -8,15 +8,7 @@ RSpec.describe MoviesController, type: :controller do
       get :show, params: { id: movie.id }
 
       expect(response).to render_template(:show)
-    end
-
-    # it "assigns @movie to the correct instance" do
-    #   movie = create_movie
-
-    #   get :show, params: { id: movie.id }
-
-    #   expect(assigns[:movie]).to movie
-    # end
+    end 
 
     it "the response status is a success" do
       movie = create_movie
@@ -44,7 +36,6 @@ RSpec.describe MoviesController, type: :controller do
 
         expect(response).to redirect_to movies_path
       end
-      # flash[:success], :notice, etc"
     end
 
     describe "with invalid attributes" do
