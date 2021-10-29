@@ -14,6 +14,6 @@ describe "when a user visits the index page" do
     click_on "Create Movie"
 
     expect(Movie.last.title).to eq "28 Days Later"
-    expect(current_path).to eq movies_path(Movie.last)
+    expect(page).to have_content "28 Days Later"
   end
 end
