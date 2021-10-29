@@ -15,5 +15,20 @@ describe "when a user visits the index page" do
 
     expect(Movie.last.title).to eq "28 Days Later"
     expect(page).to have_content "28 Days Later"
+
+  end
+
+  it "cannot create movie without valid attributes" do
+    visit new_movie_path
+
+    fill_in "Genre", with: "Horror"
+    fill_in "Summary", with: "Unsettling zombie film set in England. Cillian Murphy tried to find refuge."
+    fill_in "Paste a Movie Poster Url Link here", with: "https://flxt.tmsimg.com/assets/p31044_p_v10_af.jpg"
+
+    click_on "Create Movie"
+
+    expect{ click_on "Create Movie" }.to change(Movie, :count).by(0)
+
+    expect(current_path).to eq "/movies"
   end
 end
